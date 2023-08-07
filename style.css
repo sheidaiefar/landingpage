@@ -28,13 +28,16 @@ header / footer: #063530 */
 #header {
   background-color: #063530 !important;
   border: 3px solid orange;
-  height: 10rem;
+  height: 10rem; 
 }
 
 #top-bar {
   background-color: #016f50 !important;
   height: 2rem;
   border-bottom: 5px solid #004d37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #footer {
@@ -43,4 +46,10 @@ header / footer: #063530 */
   border: 3px solid orange;
   position: fixed;
   bottom: 0;
+}
+
+#logo {
+    position:sticky;   
+    background-color:#004d37;
+    width: 5rem;      
 }
