@@ -1,0 +1,29 @@
+** Landing Page Example #1 **
+
+Please create the landing page, that you can find as Layouts for phone, tablet & screen in the layouts folder.
+
+Requirements:
+* Use Bootstrap 5 (include from CDN or locally as you like)
+* Write your custom styles / overrides in a separate Stylesheet, ideally use SCSS to generate your CSS (if minified, include .map)
+* Your (S)CSS should be well-formed and mobile-first
+* Game Images should have a hover effect (see 2nd game-image in the design for reference)
+* Buttons should have an animated hover effect, where the gradient changes direction dark orange <-> light orange)
+
+Bonus requirement:
+* Use Javascript to establish copy functionality on the "10 FREE" Bonus Code in the header (e.g. clicking the copy button should copy "10FREE" into your clipboard on all devices)
+
+Resources:
+* Designs provided in the "_DESIGN (JPG)" Folder
+* Fonts used: Open Sans Extrabold, Semibold, Regular
+* All needed images are provided in the images folder
+* The "Play" Icon for the hover effect on the game images is provided as base64 encoded version and shall be used as such in CSS
+
+Color palette:
+white: #fff
+background: #04221f
+orange dark: #ff5700
+orange light: #ff8700
+topbar light: #016f50
+topbar dark: #004d37
+header / footer: #063530
+copybutton / borders: #1bae77
