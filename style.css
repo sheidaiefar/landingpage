@@ -28,12 +28,12 @@ header / footer: #063530 */
 #header {
   background-color: #063530 !important;
   /* border: 3px solid orange; */
-  height: 10rem; 
+  height: 15rem;
 }
 
 #top-bar {
   background-color: #016f50 !important;
-  height: 2rem;
+  height: 2.5rem;
   border-bottom: 5px solid #004d37;
   display: flex;
   justify-content: center;
@@ -49,6 +49,77 @@ header / footer: #063530 */
 }
 
 #logo {
-    position:sticky;   
-    width: 4rem;      
+  position: sticky;
+  width: 5rem;
+}
+
+#welcome-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-end;
+}
+
+#welcome-pic {
+  width: 11rem;
+}
+
+#welcome-items-left {  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-end;
+  
+}
+
+#p-welcome-bonus {
+  color: white;
+  font-size: x-large;
+  font-family: "Open Sans Extrabold", "Regular", "Semibold";
+  font-weight: 800;
+}
+
+#p-free-chip {
+  color: #ff5700;
+  font-size: x-large;
+  font-family: "Open Sans Extrabold", "Regular", "Semibold";
+  font-weight: 800;
+}
+
+#p-no-deposit {
+  color: whitesmoke;
+  font-size: small;
+  font-family: "Open Sans Extrabold", "Regular", "Semibold";
+}
+
+
+
+.input-container {
+  padding-bottom: 1em;
+}
+
+.right-inner-addon {
+  position: relative;
+}
+.right-inner-addon input {
+  padding-right: 35px !important;
+}
+.right-inner-addon i {
+  position: absolute;
+  right: 0px;
+  padding: 12px 18px;
+  pointer-events: none;
+}
+
+input {
+  width: 100%;
+  height: 30%;
+  padding: 1em !important;
+  margin: 0em !important;
+  box-sizing: border-box;
+  font-size: smaller;
 }
