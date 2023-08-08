@@ -149,22 +149,18 @@ header / footer: #063530 */
 }
 
 #content-games {
-  display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content:center;
-	align-items: center;	 
+  padding-left: 1rem; 
 }
 
 .game-box{
   flex-basis: auto;
   border-radius: 10px;
   flex-shrink: 0;
-
+  margin-bottom: 1rem;
 }
 
 .game-box img{
   width: 88%;
   border-radius: 5px;
-  border: 1px solid #016f50;
+  border: 1px solid #016f50;  
 }
