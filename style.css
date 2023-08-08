@@ -84,7 +84,7 @@ header / footer: #063530 */
 }
 
 #p-free-chip {
-  line-height: .7;
+  line-height: 0.7;
   color: #ff5700;
   font-size: x-large;
   font-family: "Open Sans Extrabold", "Regular", "Semibold";
@@ -92,7 +92,7 @@ header / footer: #063530 */
 }
 
 #p-no-deposit {
-  line-height: .5;
+  line-height: 0.5;
   color: whitesmoke;
   font-size: small;
   font-family: "Open Sans Extrabold", "Regular", "Semibold";
@@ -134,13 +134,41 @@ header / footer: #063530 */
   border-color: #016f50;
 }
 
-
-.btn-start{
+.btn-start {
   background-color: #ff5700;
   color: white !important;
   font-size: medium;
   font-weight: 500;
   border-radius: 10px;
+}
+
+
+#p-games{
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+  font-family: "Open Sans Extrabold", "Regular", "Semibold";
+  text-align: center;
+  margin-bottom: 3rem;
   
 }
 
+#content-games {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content:center;
+	align-items: center;	 
+}
+
+.game-box{
+  flex-basis: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+
+}
+
+.game-box img{
+  width: 88%;
+  border-radius: 5px;
+}
