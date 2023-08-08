@@ -171,4 +171,5 @@ header / footer: #063530 */
 .game-box img{
   width: 88%;
   border-radius: 5px;
+  border: 1px solid #016f50;
 }
