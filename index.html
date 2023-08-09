@@ -42,15 +42,15 @@
             </div>
 
             <div class="row">
-              <div class="right-inner-addon input-container col-6">
+              <div class="right-inner-addon input-container col-6" onclick="copyToClipboard()">
                 <i class="fa fa-copy"></i>
-                <input type="text" class="form-control" placeholder="10FREE" />
+                <input type="text" class="form-control" placeholder="10FREE"  disabled style="background-color: #04221f;"/>
               </div>
             </div>
 
             <div class="row">
-              <div class="d-grid gap-2 btn-start">
-                <button class="btn btn btn-start" type="button">
+              <div class="btn-effect">
+                <button class="btn btn-start" type="button">
                   START PLAYING
                 </button>
               </div>
@@ -68,26 +68,26 @@
       <div id="content-games" class="row">
         <div class="game-box col-sm-12 col-md-6 col-lg-3 col-xl-3">
           <img class="img-game" src="./assets/images/game-1.webp" />
-          <img class="img-play" src="./assets/images/play_arrow.png" /> 
+          <img class="img-play" src="./assets/images/play_arrow.png" />
         </div>
 
         <div class="game-box col-sm-12 col-md-6 col-lg-3 col-xl-3">
           <img class="img-game" src="./assets/images/game-2.webp" />
-          <img class="img-play" src="./assets/images/play_arrow.png" /> 
+          <img class="img-play" src="./assets/images/play_arrow.png" />
         </div>
 
         <div class="game-box col-sm-12 col-md-6 col-lg-3 col-xl-3">
           <img class="img-game" src="./assets/images/game-3.webp" />
-          <img class="img-play" src="./assets/images/play_arrow.png" /> 
+          <img class="img-play" src="./assets/images/play_arrow.png" />
         </div>
 
         <div class="game-box col-sm-12 col-md-6 col-lg-3 col-xl-3">
           <img class="img-game" src="./assets/images/game-4.webp" />
-          <img class="img-play" src="./assets/images/play_arrow.png" />  
+          <img class="img-play" src="./assets/images/play_arrow.png" />
         </div>
       </div>
 
-      <div id="content-row-casino-iphone" class="row">
+      <div id="content-casino-iphone" class="row">
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
           <div id="card-casino" class="card text-center border-success">
             <div class="card-body">
@@ -107,10 +107,7 @@
                 up to $5000 in real money <br />
               </h6>
 
-              <a
-                href="#"
-                id="btn-card-signup"
-                class="btn btn-card-casino-signup"
+              <a href="#" id="btn-card-signup" class="btn btn-effect"
                 >SIGN UP</a
               >
 
@@ -196,7 +193,7 @@
             <img src="./assets/images/banking-bank.webp" />
           </div>
 
-          <div class=" icons-footer col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="icons-footer col-sm-12 col-md-6 col-lg-4 col-xl-4">
             <img src="./assets/images/banking-bitcoin.webp" />
             <img src="./assets/images/banking-neosurf.webp" />
             <img src="./assets/images/banking_ezeewallet_logo.webp" />
@@ -204,7 +201,7 @@
 
           <div class="icons-footer col-sm-12 col-md-6 col-lg-4 col-xl-4">
             <img src="./assets/images/guaranteed-safe-checkout-2.webp" />
-            <img src="./assets/images/slotsvendor_logo.webp" />            
+            <img src="./assets/images/slotsvendor_logo.webp" />
           </div>
         </div>
         <p id="p-footer">Copyright 2023 playloco.com. All rights reserved.</p>
@@ -222,6 +219,18 @@
       coverCard.addEventListener("click", (e) => {
         e.preventDefault();
       });
+
+      function copyToClipboard() {
+        const text = "10FREE";
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {
+            alert("Copied to clipboard: " + text);
+          })
+          .catch((error) => {
+            console.error("Failed to copy to clipboard: ", error);
+          });
+      }
     </script>
   </body>
 </html>

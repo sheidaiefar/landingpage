@@ -86,11 +86,13 @@ header / footer: #063530 */
 .right-inner-addon {
   position: relative;
 }
+
 .right-inner-addon input {
   padding-right: 30px !important;
   color: #004d37;
   background-color: #04221f;
 }
+
 .right-inner-addon i {
   position: absolute;
   right: 3px;
@@ -116,12 +118,23 @@ header / footer: #063530 */
 }
 
 .btn-start {
-  background-color: #ff5700;
   color: white !important;
   font-weight: 500;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: large;
   font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-effect {
+  background: linear-gradient(to right, #ff8700, #ff5700);
+  transition: background 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.btn-effect :hover {
+  background: linear-gradient(to left, #ff8700, #ff5700);
 }
 
 #p-games {
@@ -203,7 +216,7 @@ header / footer: #063530 */
   }
 }
 
-@media (min-width:576px) and (max-width:992px) {
+@media (min-width: 576px) and (max-width: 992px) {
   #img-iphone img {
     width: 16rem !important;
     margin-top: 10rem;
@@ -238,13 +251,21 @@ header / footer: #063530 */
 }
 
 #btn-card-signup {
-  background-color: #ff5700;
+  /*  background-color: #ff5700;*/
   width: 25rem;
   margin-top: 1rem;
   margin-bottom: 3rem;
   color: white;
   font-size: large;
   font-weight: 700;
+
+  background: linear-gradient(to right, #ff8700, #ff5700);
+  transition: background 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+#btn-card-signup :hover {
+  background: linear-gradient(to left, #ff8700, #ff5700);
 }
 
 @media (max-width: 576px) {
@@ -253,8 +274,8 @@ header / footer: #063530 */
   }
 }
 
-@media (min-width:576px) and (max-width:992px) {
-  #card-casino  {
+@media (min-width: 576px) and (max-width: 992px) {
+  #card-casino {
     width: 17rem !important;
   }
 
