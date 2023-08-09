@@ -165,12 +165,34 @@ header / footer: #063530 */
   background-color: #04221f;
 }
 
-.card {
-  width: 27rem;
+#img-iphone{
+  display: none;
+}
+
+@media (min-width: 576px) {
+  #img-iphone{
+    display: block;
+    width: 7rem;
+  }
+}
+
+.card {  
   margin-left: 5rem;
   margin-top: 7rem;
   color: white;
 }
+
+#card-casino{
+  position:relative;
+  width: 27rem; 
+  margin-bottom: 1rem;
+}
+
+/* @media (min-width: 768px) {
+  #card-casino{
+    width: 20rem; 
+  }
+} */
 
 #card-title {
   font-size: xx-large;
@@ -187,6 +209,12 @@ header / footer: #063530 */
   color: white;
   font-size: large;
   font-weight: 700;
+}
+
+@media (min-width: 576px) {
+  #btn-card-signup{
+    width: 16rem; 
+  }
 }
 
 .form-check-input:checked {
