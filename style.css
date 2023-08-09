@@ -7,10 +7,6 @@ topbar light: #016f50
 topbar dark: #004d37
 header / footer: #063530 */
 
-* {
-  /* background-color: #04221f !important; */
-}
-
 .container {
   background-color: #04221f;
   width: 100%;
@@ -18,10 +14,6 @@ header / footer: #063530 */
   min-width: 0;
 }
 
-/* @media(min-width:576px) {
-      
-  
-  } */
 
 #header {
   background-color: #063530 !important;
@@ -163,10 +155,9 @@ header / footer: #063530 */
 
 .img-play {
   opacity: 0;
-  width: 66% !important; 
+  width: 66% !important;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  margin-left: 2rem;  
-
+  margin-left: 2rem;
 }
 
 .game-box:hover .img-play {
@@ -182,19 +173,18 @@ header / footer: #063530 */
   position: absolute;
 }
 
-#content-row-casino-iphone{
+#content-row-casino-iphone {
   margin-top: -12rem;
   z-index: 7;
-  
 }
-#content-row-casino-iphone .active:hover{
+
+#content-row-casino-iphone .active:hover {
   pointer-events: none;
 }
 
 #card-casino {
   background-color: #04221f;
   margin-bottom: 1rem;
-
 }
 
 #img-iphone {
@@ -220,11 +210,11 @@ header / footer: #063530 */
   margin-bottom: 1rem;
 }
 
-/* @media (min-width: 768px) {
+@media (max-width: 576px) {
   #card-casino{
-    width: 20rem; 
+    width: 16rem; 
   }
-} */
+}
 
 #card-title {
   font-size: xx-large;
@@ -243,9 +233,9 @@ header / footer: #063530 */
   font-weight: 700;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   #btn-card-signup {
-    width: 16rem;
+    width: 14rem;
   }
 }
 
