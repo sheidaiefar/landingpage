@@ -13,7 +13,7 @@ header / footer: #063530 */
 
 .container {
   background-color: #04221f;
-  width: 100vw;  
+  width: 100%;
   min-height: 0;
   min-width: 0;
 }
@@ -26,6 +26,7 @@ header / footer: #063530 */
 #header {
   background-color: #063530 !important;
   height: 15rem;
+  width: 100%;
 }
 
 #top-bar {
@@ -138,29 +139,48 @@ header / footer: #063530 */
   border-radius: 10px;
 }
 
-
-#p-games{
+#p-games {
   color: white;
   font-size: larger;
   font-weight: 700;
   font-family: "Open Sans Extrabold", "Regular", "Semibold";
   text-align: center;
-  margin-bottom: 3rem;  
+  margin-bottom: 3rem;
 }
 
 #content-games {
-  padding-left: 1rem; 
+  padding-left: 1rem;
 }
 
-.game-box{
+.game-box {
   flex-basis: auto;
   border-radius: 10px;
   flex-shrink: 0;
   margin-bottom: 1rem;
 }
 
-.game-box img{
+.game-box img {
   width: 88%;
   border-radius: 5px;
-  border: 1px solid #016f50;  
+  border: 1px solid #016f50;
 }
+
+#card-casino {
+  background-color: #04221f;
+}
+
+
+.form-check-input:checked{
+  background-color: green !important;
+  border-color: #016f50;
+}
+
+.form-check-label{
+  color: white;
+}
+
+#cover-card{
+  z-index: 100;  
+}
+
+
