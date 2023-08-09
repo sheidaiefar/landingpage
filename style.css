@@ -38,8 +38,6 @@ header / footer: #063530 */
   align-items: center;
 }
 
-
-
 #logo {
   position: sticky;
   width: 5rem;
@@ -146,13 +144,15 @@ header / footer: #063530 */
 
 #content-games {
   padding-left: 1rem;
+  position: relative;
 }
 
 .game-box {
-  flex-basis: auto;
   border-radius: 10px;
   flex-shrink: 0;
   margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
 }
 
 .game-box img {
@@ -161,30 +161,51 @@ header / footer: #063530 */
   border: 1px solid #016f50;
 }
 
+.img-play {
+  opacity: 0;
+  width: 60% !important;
+  border-radius: 5px;
+  border: 1px solid #016f50;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.game-box:hover .img-play {
+  opacity: 1;
+  display: inline;
+  z-index: 2;
+  position: absolute;
+}
+
+.game-box:hover .img-game {
+  opacity: 0.5;
+  z-index: 1;
+  position: absolute;
+}
+
 #card-casino {
   background-color: #04221f;
 }
 
-#img-iphone{
+#img-iphone {
   display: none;
 }
 
 @media (min-width: 576px) {
-  #img-iphone{
+  #img-iphone {
     display: block;
     width: 7rem;
   }
 }
 
-.card {  
+.card {
   margin-left: 5rem;
   margin-top: 7rem;
   color: white;
 }
 
-#card-casino{
-  position:relative;
-  width: 27rem; 
+#card-casino {
+  position: relative;
+  width: 27rem;
   margin-bottom: 1rem;
 }
 
@@ -201,7 +222,7 @@ header / footer: #063530 */
   margin-bottom: 2rem;
 }
 
-#btn-card-signup{
+#btn-card-signup {
   background-color: #ff5700;
   width: 25rem;
   margin-top: 1rem;
@@ -212,8 +233,8 @@ header / footer: #063530 */
 }
 
 @media (min-width: 576px) {
-  #btn-card-signup{
-    width: 16rem; 
+  #btn-card-signup {
+    width: 16rem;
   }
 }
 
@@ -235,28 +256,23 @@ header / footer: #063530 */
   height: auto;
   bottom: 0;
   padding-left: 3rem;
-  padding-right: 4rem;  
+  padding-right: 4rem;
   padding-bottom: 1rem;
-
-
 }
 
-#footer img{
+#footer img {
   width: 4rem;
   margin-right: 1rem;
 }
-
-
 
 .icons-footer {
   margin-top: 1rem;
   align-items: center;
 }
 
-#p-footer{
+#p-footer {
   color: white;
   text-align: center;
   margin-top: 1rem;
   font-size: x-small;
-
 }
