@@ -14,7 +14,6 @@ header / footer: #063530 */
   min-width: 0;
 }
 
-
 #header {
   background-color: #063530 !important;
   height: 15rem;
@@ -173,6 +172,12 @@ header / footer: #063530 */
   position: absolute;
 }
 
+@media (max-width: 576px) {
+  .img-game {
+    margin-bottom: -8rem;
+  }
+}
+
 #content-row-casino-iphone {
   margin-top: -12rem;
   z-index: 7;
@@ -198,6 +203,13 @@ header / footer: #063530 */
   }
 }
 
+@media (min-width:576px) and (max-width:992px) {
+  #img-iphone img {
+    width: 16rem !important;
+    margin-top: 10rem;
+  }
+}
+
 .card {
   margin-left: 5rem;
   margin-top: 7rem;
@@ -211,8 +223,10 @@ header / footer: #063530 */
 }
 
 @media (max-width: 576px) {
-  #card-casino{
-    width: 16rem; 
+  #card-casino {
+    width: 16rem;
+    position: static;
+    z-index: 30;
   }
 }
 
@@ -236,6 +250,16 @@ header / footer: #063530 */
 @media (max-width: 576px) {
   #btn-card-signup {
     width: 14rem;
+  }
+}
+
+@media (min-width:576px) and (max-width:992px) {
+  #card-casino  {
+    width: 17rem !important;
+  }
+
+  #btn-card-signup {
+    width: 12rem;
   }
 }
 
