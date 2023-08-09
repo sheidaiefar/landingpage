@@ -180,9 +180,17 @@
 
 @media (max-width: 576px) {
   .img-game {
-    margin-bottom: -8rem;
+    margin-bottom: -4rem;
   }
 }
+
+@media (max-width: 576px) {
+  .img-play {
+    margin-bottom: -3rem;
+  }
+}
+
+
 
 #content-row-casino-iphone {
   margin-top: -12rem;
