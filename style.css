@@ -158,9 +158,11 @@
 
 .img-play {
   opacity: 0;
-  width: 66% !important;
+  width: 25% !important;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  margin-left: 2rem;
+  margin-left: 6rem;
+  margin-top: 5rem;
+  margin-bottom: -9rem;
 }
 
 .game-box:hover .img-play {
