@@ -38,12 +38,7 @@ header / footer: #063530 */
   align-items: center;
 }
 
-#footer {
-  background-color: #063530 !important;
-  height: 4rem;
-  position: fixed;
-  bottom: 0;
-}
+
 
 #logo {
   position: sticky;
@@ -134,16 +129,17 @@ header / footer: #063530 */
 .btn-start {
   background-color: #ff5700;
   color: white !important;
-  font-size: medium;
   font-weight: 500;
   border-radius: 10px;
+  font-size: large;
+  font-weight: 700;
 }
 
 #p-games {
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
-  font-size: larger;
-  font-weight: 700;
-  font-family: "Open Sans Extrabold", "Regular", "Semibold";
+  font-size: xx-large;
+  font-weight: 800;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -204,4 +200,35 @@ header / footer: #063530 */
 
 #cover-card {
   z-index: 100;
+}
+
+#footer {
+  background-color: #063530 !important;
+  height: auto;
+  bottom: 0;
+  padding-left: 3rem;
+  padding-right: 4rem;  
+  padding-bottom: 1rem;
+
+
+}
+
+#footer img{
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+
+
+.icons-footer {
+  margin-top: 1rem;
+  align-items: center;
+}
+
+#p-footer{
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: x-small;
+
 }
