@@ -169,18 +169,39 @@ header / footer: #063530 */
   background-color: #04221f;
 }
 
+.card {
+  width: 27rem;
+  margin-left: 5rem;
+  margin-top: 7rem;
+  color: white;
+}
 
-.form-check-input:checked{
+#card-title {
+  font-size: xx-large;
+  font-family: "Arial" "Open Sans Extrabold", "Regular", "Semibold";
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+#btn-card-signup{
+  background-color: #ff5700;
+  width: 25rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: white;
+  font-size: large;
+  font-weight: 700;
+}
+
+.form-check-input:checked {
   background-color: green !important;
   border-color: #016f50;
 }
 
-.form-check-label{
+.form-check-label {
   color: white;
 }
 
-#cover-card{
-  z-index: 100;  
+#cover-card {
+  z-index: 100;
 }
-
-
