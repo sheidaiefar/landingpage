@@ -163,10 +163,10 @@ header / footer: #063530 */
 
 .img-play {
   opacity: 0;
-  width: 60% !important;
-  border-radius: 5px;
-  border: 1px solid #016f50;
+  width: 66% !important; 
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin-left: 2rem;  
+
 }
 
 .game-box:hover .img-play {
@@ -177,13 +177,24 @@ header / footer: #063530 */
 }
 
 .game-box:hover .img-game {
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: 1;
   position: absolute;
 }
 
+#content-row-casino-iphone{
+  margin-top: -12rem;
+  z-index: 7;
+  
+}
+#content-row-casino-iphone .active:hover{
+  pointer-events: none;
+}
+
 #card-casino {
   background-color: #04221f;
+  margin-bottom: 1rem;
+
 }
 
 #img-iphone {
