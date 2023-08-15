@@ -1,5 +1,23 @@
-.container {
-  background-color: #04221f;
+body {
+  background-color: white;
+  text-align: center;
+  margin: 0;
+  border: 0;
+  font-family: 'Open Sans, Extrabold, Semibold, Regular';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bgColor: #04221f;
+  --white: #ffffff;
+}
+
+
+.container-page {
+  background-color: var(--bgColor);
   width: 100%;
   min-height: 0;
   min-width: 0;
@@ -119,6 +137,7 @@
 }
 
 .btn-effect {
+  padding: 0;
   background: linear-gradient(to right, #ff8700, #ff5700);
   transition: background 0.5s ease-in-out;
   border-radius: 5px;
@@ -140,6 +159,7 @@
 #content-games {
   padding-left: 1rem;
   position: relative;
+  width: 100%;
 }
 
 .game-box {
@@ -151,7 +171,7 @@
 }
 
 .game-box img {
-  width: 88%;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid #016f50;
 }
@@ -160,33 +180,33 @@
   opacity: 0;
   width: 25% !important;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  margin-left: 6rem;
-  margin-top: 5rem;
-  margin-bottom: -9rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .game-box:hover .img-play {
   opacity: 1;
-  display: inline;
+  /*display: inline;*/
   z-index: 2;
-  position: absolute;
 }
 
 .game-box:hover .img-game {
   opacity: 0.3;
   z-index: 1;
-  position: absolute;
+  /*position: absolute;*/
 }
 
 @media (max-width: 576px) {
   .img-game {
-    margin-bottom: -4rem;
+    /*margin-bottom: -4rem;*/
   }
 }
 
 @media (max-width: 576px) {
   .img-play {
-    margin-bottom: -3rem;
+    /*margin-bottom: -3rem;*/
   }
 }
 
@@ -264,7 +284,9 @@
   transition: background 0.5s ease-in-out;
   border-radius: 5px;
 }
-
+#btn-card-signup  button{
+  width: 100%;
+}
 #btn-card-signup :hover {
   background: linear-gradient(to left, #ff8700, #ff5700);
 }
