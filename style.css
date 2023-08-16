@@ -95,7 +95,7 @@ body {
 
 @media  (max-width: 992px) {
   #welcome-items-left  {
-    margin-left: 7rem;
+    margin-left: 6rem;
     display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
