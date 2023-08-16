@@ -1,38 +1,46 @@
-body {
-  background-color: white;
-  text-align: center;
-  margin: 0;
-  border: 0;
-  font-family: 'Open Sans, Extrabold, Semibold, Regular';
+:root {
+  --bgColor: #04221f;
+  --white: #ffffff;
+  --colorFooterHeader: #063530;
+  --topbarDark: #004d37;
+  --topbarLight: #016f50;
+  --orangeLight: #ff8700;
+  --orangeDark: #ff5700;
+  --fontFamily: "Open Sans, Extrabold, Semibold, Regular";
 }
 
 * {
   box-sizing: border-box;
 }
 
-:root {
-  --bgColor: #04221f;
-  --white: #ffffff;
+body {
+  background-color: white;
+  text-align: center !important;
+  margin: 0;
+  border: 0;
+  font-family: var(--fontFamily);
+  justify-content: center;
+  align-items: center;
 }
-
 
 .container-page {
   background-color: var(--bgColor);
   width: 100%;
   min-height: 0;
   min-width: 0;
+  align-items: center;
 }
 
 #header {
-  background-color: #063530 !important;
+  background-color: var(--colorFooterHeader) !important;
   height: 15rem;
   width: 100%;
 }
 
 #top-bar {
-  background-color: #016f50 !important;
+  background-color: var(--topbarLight) !important;
   height: 2.5rem;
-  border-bottom: 5px solid #004d37;
+  border-bottom: 5px solid var(--topbarDark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,15 +77,15 @@ body {
   line-height: 1.1;
   color: white;
   font-size: x-large;
-  font-family: "Open Sans Extrabold", "Regular", "Semibold";
+  font-family: var(--fontFamily);
   font-weight: 800;
 }
 
 #p-free-chip {
   line-height: 0.7;
-  color: #ff5700;
+  color: var(--orangeDark);
   font-size: x-large;
-  font-family: "Open Sans Extrabold", "Regular", "Semibold";
+  font-family: var(--fontFamily);
   font-weight: 800;
 }
 
@@ -85,7 +93,7 @@ body {
   line-height: 0.5;
   color: whitesmoke;
   font-size: small;
-  font-family: "Open Sans Extrabold", "Regular", "Semibold";
+  font-family: var(--fontFamily);
 }
 
 .input-container {
@@ -98,8 +106,8 @@ body {
 
 .right-inner-addon input {
   padding-right: 30px !important;
-  color: #004d37;
-  background-color: #04221f;
+  color: var(--topbarDark);
+  background-color: var(--bgColor);
 }
 
 .right-inner-addon i {
@@ -108,7 +116,7 @@ body {
   padding: 12px 16px;
   pointer-events: none;
   color: white;
-  background-color: #016f50;
+  background-color: var(--topbarLight);
   border-radius: 0 25% 25% 0;
   font-size: medium;
   width: 30%;
@@ -122,8 +130,8 @@ body {
   margin: 0em !important;
   box-sizing: border-box;
   font-size: smaller;
-  background-color: #016f50;
-  border-color: #016f50;
+  background-color: var(--topbarLight);
+  border-color: var(--topbarLight);
 }
 
 .btn-start {
@@ -138,17 +146,17 @@ body {
 
 .btn-effect {
   padding: 0;
-  background: linear-gradient(to right, #ff8700, #ff5700);
+  background: linear-gradient(to right, var(--orangeLight), var(--orangeDark));
   transition: background 0.5s ease-in-out;
   border-radius: 5px;
 }
 
 .btn-effect :hover {
-  background: linear-gradient(to left, #ff8700, #ff5700);
+  background: linear-gradient(to left, var(--orangeLight), var(--orangeDark));
 }
 
 #p-games {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--fontFamily);
   color: white;
   font-size: xx-large;
   font-weight: 800;
@@ -157,7 +165,8 @@ body {
 }
 
 #content-games {
-  padding-left: 1rem;
+  padding-left: 12rem;
+  padding-right: 8rem;
   position: relative;
   width: 100%;
 }
@@ -171,9 +180,9 @@ body {
 }
 
 .game-box img {
-  width: 100%;
+  width: 90%;
   border-radius: 5px;
-  border: 1px solid #016f50;
+  border: 1px solid var(--topbarLight);
 }
 
 .img-play {
@@ -210,8 +219,6 @@ body {
   }
 }
 
-
-
 #content-row-casino-iphone {
   margin-top: -12rem;
   z-index: 7;
@@ -222,7 +229,7 @@ body {
 }
 
 #card-casino {
-  background-color: #04221f;
+  background-color: var(--bgColor);
   margin-bottom: 1rem;
 }
 
@@ -266,13 +273,12 @@ body {
 
 #card-title {
   font-size: xx-large;
-  font-family: "Arial" "Open Sans Extrabold", "Regular", "Semibold";
+  font-family: var(--fontFamily);
   font-weight: 900;
   margin-bottom: 2rem;
 }
 
 #btn-card-signup {
-  /*  background-color: #ff5700;*/
   width: 25rem;
   margin-top: 1rem;
   margin-bottom: 3rem;
@@ -280,15 +286,15 @@ body {
   font-size: large;
   font-weight: 700;
 
-  background: linear-gradient(to right, #ff8700, #ff5700);
+  background: linear-gradient(to right, var(--orangeLight), var(--orangeDark));
   transition: background 0.5s ease-in-out;
   border-radius: 5px;
 }
-#btn-card-signup  button{
+#btn-card-signup button {
   width: 100%;
 }
 #btn-card-signup :hover {
-  background: linear-gradient(to left, #ff8700, #ff5700);
+  background: linear-gradient(to left, var(--orangeLight), var(--orangeDark));
 }
 
 @media (max-width: 576px) {
@@ -309,7 +315,7 @@ body {
 
 .form-check-input:checked {
   background-color: green !important;
-  border-color: #016f50;
+  border-color: var(--topbarLight);
 }
 
 .form-check-label {
@@ -321,7 +327,7 @@ body {
 }
 
 #footer {
-  background-color: #063530 !important;
+  background-color: var(--colorFooterHeader) !important;
   height: auto;
   bottom: 0;
   padding-left: 3rem;
