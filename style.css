@@ -71,8 +71,8 @@ body {
 }
 
 @media (max-width: 992px) {
-  #welcome-pic  {
-  display: none;
+  #welcome-pic {
+    display: none;
   }
 }
 
@@ -87,22 +87,21 @@ body {
 }
 
 @media (max-width: 992px) {
-  #input-free  {
-  width: 7rem;
- 
+  #input-free {
+    width: 7rem;
   }
 }
 
-@media  (max-width: 992px) {
-  #welcome-items-left  {
+@media (max-width: 992px) {
+  #welcome-items-left {
     margin-left: 6rem;
     display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center!important;;
-  align-items: center!important;
-  align-content: center !important;
-  text-align: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    text-align: center;
   }
 }
 
@@ -268,7 +267,7 @@ body {
   width: 20rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 770px) {
   #img-iphone {
     display: none;
   }
@@ -276,8 +275,10 @@ body {
 
 @media (min-width: 576px) and (max-width: 992px) {
   #img-iphone img {
-    width: 20rem !important;
+    width: 15rem !important;
     margin-top: 8rem;
+    position: relative;
+    display: inline-block;
   }
 }
 
@@ -287,13 +288,19 @@ body {
   color: white;
 }
 
+@media (max-width: 576px) {
+  .card {
+    margin-left: 1rem;
+  }
+}
+
 #card-casino {
   position: relative;
   width: 30rem;
   margin-bottom: 1rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   #card-casino {
     width: 16rem;
     position: static;
@@ -360,25 +367,45 @@ body {
   padding-left: 3rem;
   padding-right: 4rem;
   padding-bottom: 1rem;
+  width: 100%;
+  position: inherit;
+  padding-top: 1rem;
 }
 
 #footer-container-icons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  margin-right: 8rem;
+  margin-left: 8rem;
+  width: 80%;
   align-items: center;
+  display: flex;
+  justify-content: space-around;
   align-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
-#footer img {
-  width: 4rem;
-  margin-right: 1rem;
+@media (max-width: 992px) {
+  #footer-container-icons {
+    margin-left: 2rem;
+    width: 80%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .icons-footer {
+  display: contents;
   margin-top: 1rem;
-  align-items: center;
+}
+
+.icons-footer img {
+  width: 3rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 #p-footer {
